@@ -1,0 +1,260 @@
+* {
+    box-sizing: border-box;
+}
+
+.intro {
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 0;
+    background: rgb(254, 243, 239);
+    background-image: url('./img/intro.jpg');
+    background-repeat: no-repeat;
+    background-position: 40% bottom;
+    background-size: cover;
+}
+
+.cartel {
+    margin-top: 50vh;
+    margin-right: 2em;
+    transform: translate(0, -50%);
+}
+
+.cartel a {
+    font-weight: bolder;
+    text-decoration: none;
+    color: salmon;
+}
+
+.glow {
+    background: radial-gradient(rgba(255,255,255,1) 10%, rgba(255,255,255,0));
+}
+
+form {
+    margin-top: 3em;
+    padding: 1em;
+    padding-top: 2em;
+}
+
+input {
+    background: rgba(255, 255, 255, .3) !important;
+    color: salmon !important;
+    text-align: center;
+    box-shadow: 0 5px 5px salmon;
+    border-radius: 2rem !important;
+}
+
+input:focus {
+    background: salmon !important;
+    color: white !important;
+    box-shadow: 0 5px 5px white !important;
+    border: none !important;
+}
+
+input:focus::placeholder {
+    color: white !important;
+}
+
+.btnBjork2 {
+    border-radius: 2rem;
+    margin-top: 1rem;
+    background: salmon;
+    padding: 1rem;
+    color: white;
+    font-size: 1.15em;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    background: linear-gradient(135deg, lavender, lightblue, pink);
+    position: relative;
+}
+
+.navbarGradient {
+    background: yellowgreen;
+    background: linear-gradient(white 25%, rgba(255,255,255,0));
+} 
+
+.navbar-brand {
+    background-image: url("img/Logo2.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30%;
+    height: 4rem;
+    overflow: hidden;
+    animation: float 4s infinite alternate;
+}
+
+.dropdown-menu {
+    background: rgba(255,255,255,0.8) !important;
+    border: none !important;
+}
+
+.dropdown-item:hover{
+    filter: blur(0);
+    background: none !important;
+    color: rgb(250, 128, 114) !important;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.container {
+    min-width: 20rem;
+}
+
+.container-fluid {
+    padding: 0;
+    width: 100%;
+}
+
+.carouselTitle {
+    position: absolute;
+    left:50%;
+    top: 100%;
+    transform: translate(-50%, -30%);
+    z-index: 1;
+    color:white;
+}
+
+.carouselTitle img {
+    width:100vw;
+    max-width:2000px;
+    pointer-events: none;
+}
+
+.cardContainer {
+    margin-top: 4rem;
+}
+
+@media (min-width: 768px) {
+    .cardContainer {
+        margin-top: 10rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .cardContainer {
+        margin-top: 19rem;
+    }
+}
+
+.albumContainer {
+    margin-top: 20vh;
+}
+
+.card {
+    text-align: center;
+    margin-top: 30px;
+    background: radial-gradient(ellipse at top, white 40%, rgba(255, 255, 255, 0) 70%);
+    border: none;
+}
+
+.card h5 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 2.2rem;
+    font-weight: lighter;
+    margin-bottom: 1.5rem;
+}
+
+.btnBjork {
+    border: 1px solid white;
+    border-radius: 50% 50%;
+    height: 2rem;
+    width: 2rem;
+    margin-top: 1rem;
+    background: rgba(255, 255, 255, .3);
+    padding:0;
+    color: salmon;
+    font-size: 1.15em;
+}
+
+.featurette-image {
+    border-radius: 50% 50%;
+    position: relative;
+    z-index: 1;
+}
+
+
+.imageTag {
+    display: block;
+    width: 50%;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    z-index: 2;
+    animation: float 5s infinite alternate;
+}
+
+@media (min-width: 768px) {
+.imageTag {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    z-index: 2;
+}
+}
+
+.albumTxt {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 10vh;
+    z-index: 999;
+}
+
+@media (min-width: 768px) {
+    .albumTxt {
+        padding-top:0;
+        justify-content: center;
+        text-align: left;
+    }
+}
+
+footer {
+    background: radial-gradient(ellipse at bottom, white 40%, rgba(255, 255, 255, 0) 70%);
+    margin-top: 30vh;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    footer {
+        margin-top: 60vh;
+    }
+}
+
+.socialContainer a {
+    width: 2em;
+    height: 2em;
+    background: rgba(255, 255, 255, .3);
+    color:salmon;
+    border-radius: 50% 50%;
+    padding-top: .5em;
+    font-size: 1.5em;
+    margin: 0.25em;
+    text-decoration: none;
+}
+
+.derechos {
+    margin-top: 10em;
+    padding-bottom: 2em;
+    text-align: center;
+    font-size: smaller;
+    color: lightseagreen;
+}
+
+@keyframes float {
+    0%   {transform:translate(0px);}
+    20% {transform:translate(-2px, 8px) scale(.98);}
+    50% {transform:translate(0, -3px) scale(1);}
+    75% {transform:translate(1px, 5px) scale(.99);}
+    100% {transform:translate(0) scale(1);}
+  }
